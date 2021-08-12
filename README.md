@@ -17,7 +17,8 @@ INSERT INTO `sd_so_main_tb` (`id`, `parent_id`, `name`, `code`) VALUES
 (2, 1, 'Sumatera', 'SUM'),
 (3, 2, 'Sumatera Barat', 'SB'),
 (4, 3, 'Padang', 'PDG'),
-(5, 4, 'Balai Baru', 'BB');
+(5, 4, 'Balai Baru', 'BB'),
+(6, 1, 'JAWA', 'JAVA');
 
 ALTER TABLE `sd_so_main_tb`
   ADD PRIMARY KEY (`id`);
@@ -45,6 +46,7 @@ LEFT JOIN sd_so_main_tb AS lv5 ON lv5.parent_id = lv4.id
 -- WHERE lv3.name = 'SUMATERA BARAT';
 -- WHERE lv4.name = 'PADANG';
 -- WHERE lv5.name = 'BALAI BARU';
+-- WHERE lv1.name = 'INDONESIA' and lv2.name = 'SUMATERA';
 ```
 
 ---
